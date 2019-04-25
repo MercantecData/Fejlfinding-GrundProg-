@@ -73,7 +73,7 @@ namespace Fejlfinding
             string word = GetUserInput();
             while (word != "-done")
             {
-                if (word.Length > 0)
+                if (word.Length < 0)
                 {
                     string[] strings = word.Split(' ');
                     foreach (string s in strings)
